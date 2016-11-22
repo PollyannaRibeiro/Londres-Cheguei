@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+
+header{
+	padding: 10px 0px 0px;
+
+}
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff;
+	
+}
+
+footer{
+	padding: 50px 10px;
+	background-color: #C1C1C1;
+ 
+}
+
+
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	
+	}
+
+a {
+	
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	
+	
+
+}
+
+/*logo e menu*/
+.style-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 190px;
+		
+}
+
+
+.style-nav ul {
+	list-style-type: none;
+	
+}
+
+.style-nav ul li a {
+	text-decoration: none;
+	color: #2F322A;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	
+}
+
+.plano-de-fundo{
+	background-size:cover;
+	padding: 0px 0px 20px 0px;
+	color: #FFFFFF;
+	text-align: center;
+	
+
+}
+
+/*Configurações das legendas e bordas das imagens*/
+
+.legenda h1 {
+	font-size: 57px;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: left;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	color: rgba(0,0,0,0.70);
+	background-color: rgba(255,255,255,0.70);
+
+}
+
+.legenda p {
+	font-size: 30px;
+	text-transform:full-width;
+	font-weight: 400;
+	color: rgba(0,0,0,0.70);
+	background-color: rgba(255,255,255,0.70);
+	text-align: left;
+
+	
+}
+
+.col-md-one-3{
+	text-align: center;
+}
+
+.redes li a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-left: 20px;
+	
+	
+}
+
+.redes ul {
+	list-style: none;
+	text-align: center;
+	
+}
+
+.redes {
+	position: absolute;
+	bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+}
+.redes li{
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 30px;
+	
+}
+
+#rodape{
+	position: relative;
+	bottom: 12px;
+	margin-top: 20px;
+	
+	
+}
+
+
+nav#rodape-lista ul{
+	list-style: none;
+	
+}
+.direito {
+	font-size: 12px;
+	position: relative;	
+	top: 20px;
+	left: 50px;
+
+}
+
+
+/*organizando as linhas e colunas*/
+
+.col{
+	width: 100%;
+	
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	
+}
+.row:after {
+	clear: both;
+	 
+}
+
+
+
+
+
+
+
+/*Tablet view*/
+
+
+@media (min-width: 700px) and (max-width: 1000px){
+	
+
+	.style-nav ul li {
+		display: inline-block;
+	}
+	.style-nav ul {
+		text-align: center;
+	}
+	
+	.legenda h1 {
+		font-size: 20px;
+		padding-bottom: 2px;
+		padding-left: 0px;
+	}
+
+	.legenda p {
+		font-size: 15px;
+		font-weight: 400;
+		text-align: left;
+	}
+	
+	.col-md-one-3 {
+		width: 33.33%;	
+	}
+	
+	.col {
+		float: left;
+		padding: 0px 7px 14px;
+	}
+}
+
+/*cel view (small) */
+
+@media (min-width: 250px) and (max-width: 549px){
+		
+	.legenda h1{
+		font-size: 15px;
+		padding-left: 0px;
+		padding-bottom: 2px;
+		padding-top: 5px;
+	}
+	
+	.legenda p {
+		font-size: 12px;
+		padding-bottom: 5px
+		
+	}
+	
+	.col-md-one-3{
+		padding: 10px;
+	}
+	
+	.direito {
+	font-size: 10px;
+	position: absolute;	
+	top: 50px;
+	left: auto;
+	text-align: center;
+
+	}
+	
+	.redes li{
+	float: left;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	
+}
+	
+	.redes li a{
+	width: 30px;
+	height: 70px;
+	padding: 0px;
+			
+}
+}
+
+
+/*cel grande e tablet peq*/
+
+@media (min-width: 550px) and (max-width: 699px){
+	
+	.legenda h1 {
+		font-size: 18px;
+		padding-bottom: 2px;
+		padding-left: 0px;
+	}
+
+	.legenda p {
+		font-size: 12px;
+		font-weight: 400;
+		text-align: left;
+	}
+	
+	.col-md-one-3 {
+		width: 50%;	
+	}
+	
+	.col {
+		float: left;
+		padding: 0px 5px 14px;
+	}
+}
+
+/*notebook ou +*/
+
+@media (min-width: 1001px){
+	
+	.style-logo {
+		float: left;
+		position: absolute;
+		width: 200px;
+		padding-top: 0px;
+		left: 100px;
+	
+	}
+	.style-nav{
+		float:right;
+		padding-right: 100px;
+	}
+	.plano-de-fundo{
+		padding-top: 23px;
+		
+	} 
+	
+	.style-nav ul li {
+		display: inline-block;
+	}
+	
+	.legenda h1 {
+		font-size: 20px;
+		padding-bottom: 2px;
+		padding-left: 0px;
+	}
+
+	.legenda p {
+		font-size: 15px;
+		font-weight: 400;
+		text-align: left;
+	}
+	
+	.col-md-one-3 {
+		width: 33.33%;	
+	}
+	
+	.col {
+		float: left;
+		padding: 0px 7px 14px;
+	}
+}
